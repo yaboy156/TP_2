@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>TODO liste</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div><h1>TODO-ish</h1></div>
+      <h1>TODO-ish</h1>
     </header>
 
     <main>
-        <div class="flex_de_tache">
-        <div class="conteneur_image"><img src="image/plus-icon.jpg" alt="plusSign"/></div>
-        <div><p>Ajouter une tâche</p></div>
-        </div>
-        <div class="liste_tache">
-        <div><h2> Liste de tâches </h2></div>
-        <div>
-            <ul>
-                <li><input type="checkbox">Tondres le gazon</li>
-                <li><input type="checkbox"> La vaiselle</li>
-                <li><input type="checkbox">Étudier mon examen de web</li>
-                <li><input type="checkbox">Jouer à Elder Scrolls Online!!</li>
-            </ul>
-        </div>
-        <div><a href="https://www.svgrepo.com/svg/71781/plus">Source des images</a></div> 
+      <button id="ajouterTache">Ajouter une tâche</button>
+      <div id="saisi_de_texte" class="cacher"><input type="text" id="zonedetexte" >
+      <div class="deux_bt">
+      <button id="btajouter">ajouter</button>
+      <button id="btannuler">annuler</button>
+      </div>
     </div>
-</main>
-    <footer></footer>
-</body>
+      <h2>Liste de tâches</h2>
+      <ul id="listeTaches">
+        <li><input type="checkbox" />Tondres le gazon</li>
+        <li><input type="checkbox" /> La vaiselle</li>
+        <li><input type="checkbox" />Étudier mon examen de web</li>
+        <li><input type="checkbox" />Jouer à Elder Scrolls Online!!</li>
+      </ul>
+    </main>
+    <footer>
+      <p>Créé par Sonny</p>
+    </footer>
+    <script src="javascript/code_java.js"></script>
+  </body>
 </html>
